@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>一键打赏按钮生成</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta charset="utf-8" />
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+<link href="http://v3.bootcss.com/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>	
+</head>
+
+<body>
+	<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">一键打赏按钮生成</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">主页</a></li>
+            <li><a href="qa.html">Q&A</a></li>
+            <li><a href="#about">Github</a></li>
+            <li><a href="http://www.wdk.pw/551.html">原理</a></li>
+            <li><a href="http://meiweihezi.com">建站服务</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>绿色，方便，开源的收款主页替代方案</h1>
+      </div>
+      <p class="lead">
+      支付宝关闭了个人收款主页，但是我们还是有办法生成『打赏』按钮，实现的效果是，用户一次点击即可跳转到支付宝的转账页面，并且你可以设定默认金额，转账账号和自定义备注信息，效果见此：
+      <form action="https://shenghuo.alipay.com/send/payment/fill.htm"  accept-charset="gbk" id="dinggou" method="post" name="dinggou" target="_blank">
+    <input name="" type="submit" value="点我" class="btn btn-success" /> <input name="optEmail" type="hidden" value="18981932715" /> <input name="memo" type="hidden" value="如果你觉得有用，不妨打赏我一杯咖啡" /> <input id="payAmount" name="payAmount" type="hidden" value="9.99" /> <input id="title" name="title" type="hidden" value="一键打赏测试" />
+</form>
+<hr>
+如果你有自己的网站/博客，希望在自己的网站加入一键打赏按钮，可以填入你的信息直接生成代码，如果你想仅仅生成一个链接/二维码，放在微博/BBS上面，请点击生成链接<br><br>
+<form action="ok.php" method="post">
+ <input type="text" id="email" name="email" placeholder="支付宝账号"><br><br>
+ <input type="text" id="number" name="money" placeholder="默认金额"><br><br>
+ <input type="text" id="why" name="why" placeholder="付款说明"><br><br>
+ <input type="text" id="more" name="more" placeholder="备注"><br><br>
+<button type="button" class="btn btn-default" onclick="daima()">生成代码</button>
+<input name="" type="submit" value="生成链接" class="btn btn-Primary" />
+</form>
+      <code id='code'>
+        
+
+      </code>
+
+      </p>
+
+
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted">王登科出品</p>
+      </div>
+    </div>
+<script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript">
+  function daima()
+  {
+    var email = document.getElementById('email').value
+    var number = document.getElementById('number').value
+    var why = document.getElementById('why').value
+    var more = document.getElementById('more').value
+
+    document.getElementById('code').innerHTML='&lt;form action="https://shenghuo.alipay.com/send/payment/fill.htm" accept-charset="gbk" id="dinggou" method="post" name="dinggou" target="_blank"&gt;&lt;input name="" type="submit" value="打赏" class="btn btn-success" /&gt; &lt;input name="optEmail" type="hidden" value="'+email+'" /&gt; &lt;input name="memo" type="hidden" value="'+more+'" /&gt; &lt;input id="payAmount" name="payAmount" type="hidden"value="'+number+'" /&gt; &lt;input id="title" name="title" type="hidden" value="'+why+'" /&gt;<br />&lt;/form&gt;'
+  }
+</script>
+
+</body>
+</html>
