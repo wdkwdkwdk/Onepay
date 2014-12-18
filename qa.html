@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>一键打赏按钮生成</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta charset="utf-8" />
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+<link href="http://v3.bootcss.com/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>	
+</head>
+
+<body>
+	<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">一键打赏按钮生成</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">主页</a></li>
+            <li class="active"><a href="qa.html">Q&A</a></li>
+            <li><a href="#about">Github</a></li>
+            <li><a href="http://www.wdk.pw/551.html">原理</a></li>
+            <li><a href="http://meiweihezi.com">建站服务</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Q&A</h1>
+      </div>
+      <p class="lead">
+      <h2>
+        生成代码和生成链接有什么区别？
+
+      </h2>
+     生成的『代码』是一个HTML表单，如果你想用在自己的网站上面，可以直接使用生成的代码，而如果你想让别人点击一个链接或扫描一个二维码就给你支付，则需要生成『链接』，链接由我们中转，无需网页部署。
+      <hr>
+
+      <h2>
+        使用这个服务安全吗?
+      </h2>
+      生成的『代码』是一个完整的表单，你可以对其进行修改，是没有任何问题的。而『链接』由本站中转，你可以在Github看到开源的代码，了解我们是如何中转的，这个也请放心，如果你不放心可以用我们的开源代码在自己的服务器上搭建。
+      </p>
+
+      <hr>
+      <h2>
+        原理是什么？
+      </h2>
+      原理见：<a href="http://www.wdk.pw/551.html">这篇文章</a>，如果支付宝封了一些东西，我们不保证能继续使用，但我们会继续探寻可能的方法。
+
+
+
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted">王登科出品</p>
+      </div>
+    </div>
+<script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript">
+  function daima()
+  {
+    var email = document.getElementById('email').value
+    var number = document.getElementById('number').value
+    var why = document.getElementById('why').value
+    var more = document.getElementById('more').value
+
+    document.getElementById('code').innerHTML='&lt;form action="https://shenghuo.alipay.com/send/payment/fill.htm" accept-charset="gbk" id="dinggou" method="post" name="dinggou" target="_blank"&gt;&lt;input name="" type="submit" value="打赏" class="btn btn-success" /&gt; &lt;input name="optEmail" type="hidden" value="'+email+'" /&gt; &lt;input name="memo" type="hidden" value="'+more+'" /&gt; &lt;input id="payAmount" name="payAmount" type="hidden"value="'+number+'" /&gt; &lt;input id="title" name="title" type="hidden" value="'+why+'" /&gt;<br />&lt;/form&gt;'
+  }
+</script>
+
+</body>
+</html>
