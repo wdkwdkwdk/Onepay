@@ -101,17 +101,6 @@ else
       </div>
     </div>
 <script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-<script type="text/javascript">
-  function daima()
-  {
-    var email = document.getElementById('email').value
-    var number = document.getElementById('number').value
-    var why = document.getElementById('why').value
-    var more = document.getElementById('more').value
-
-    document.getElementById('code').innerHTML='&lt;form action="https://shenghuo.alipay.com/send/payment/fill.htm" accept-charset="gbk" id="dinggou" method="post" name="dinggou" target="_blank"&gt;&lt;input name="" type="submit" value="打赏" class="btn btn-success" /&gt; &lt;input name="optEmail" type="hidden" value="'+email+'" /&gt; &lt;input name="memo" type="hidden" value="'+more+'" /&gt; &lt;input id="payAmount" name="payAmount" type="hidden"value="'+number+'" /&gt; &lt;input id="title" name="title" type="hidden" value="'+why+'" /&gt;<br />&lt;/form&gt;'
-  }
-</script>
 
 </body>
 </html>
