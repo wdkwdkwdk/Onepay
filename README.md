@@ -15,8 +15,3 @@ Onepay
 
 #更多
 如果你觉得这个小项目不错，欢迎给我一点[打赏](http://meiweihezi.com/dashang/dashang.php?id=ZGsxMA==)
-
-
-> 我一直期待人生的第一个fork，谁fork了我一定请他喝个咖啡什么的
-
-> 我目前还菜的很～代码求轻喷（其实我是立志成为产品狗的）
