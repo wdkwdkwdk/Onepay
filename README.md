@@ -14,4 +14,4 @@ Onepay
 [WDK博客](http://www.wdk.pw)
 
 #更多
-如果你觉得这个小项目不错，欢迎给我一点[打赏](http://meiweihezi.com/dashang/dashang.php?id=ZGsxMA==)
+如果你觉得这个小项目不错，欢迎给我一点[打赏](http://meiweihezi.com/dashang/dashang.php?id=ZGs2Mw==)
