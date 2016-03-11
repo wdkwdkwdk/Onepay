@@ -1,5 +1,9 @@
+#更新：这个项目已经失效
+
+
+
 Onepay [![Comment-on-Github.Party](https://img.shields.io/badge/Comment%20on-Github.Party-yellow.svg)](https://github.party/item?id=72)
-======
+==gengx====
 
 一键支付打赏按钮生成，绿色，方便，开源的收款主页替代方案
 
