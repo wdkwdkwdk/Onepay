@@ -5,6 +5,8 @@
 Onepay [![Comment-on-Github.Party](https://img.shields.io/badge/Comment%20on-Github.Party-yellow.svg)](https://github.party/item?id=72)
 ==gengx====
 
+[![Join the chat at https://gitter.im/wdkwdkwdk/Onepay](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wdkwdkwdk/Onepay?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 一键支付打赏按钮生成，绿色，方便，开源的收款主页替代方案
 
 #使用说明：
